@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		92AE6CF4139EA3E200373814 /* microphone.png in Resources */ = {isa = PBXBuildFile; fileRef = 92AE6CEF139EA3E200373814 /* microphone.png */; };
+		92AE6CF5139EA3E200373814 /* play-start.png in Resources */ = {isa = PBXBuildFile; fileRef = 92AE6CF0139EA3E200373814 /* play-start.png */; };
+		92AE6CF6139EA3E200373814 /* play-stop.png in Resources */ = {isa = PBXBuildFile; fileRef = 92AE6CF1139EA3E200373814 /* play-stop.png */; };
+		92AE6CF7139EA3E200373814 /* record-start.png in Resources */ = {isa = PBXBuildFile; fileRef = 92AE6CF2139EA3E200373814 /* record-start.png */; };
+		92AE6CF8139EA3E200373814 /* record-stop.png in Resources */ = {isa = PBXBuildFile; fileRef = 92AE6CF3139EA3E200373814 /* record-stop.png */; };
 		948D8C18139E9C4300C5877F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 948D8C17139E9C4300C5877F /* UIKit.framework */; };
 		948D8C1A139E9C4300C5877F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 948D8C19139E9C4300C5877F /* Foundation.framework */; };
 		948D8C1C139E9C4300C5877F /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 948D8C1B139E9C4300C5877F /* CoreGraphics.framework */; };
@@ -36,6 +41,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		92AE6CEF139EA3E200373814 /* microphone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = microphone.png; sourceTree = "<group>"; };
+		92AE6CF0139EA3E200373814 /* play-start.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "play-start.png"; sourceTree = "<group>"; };
+		92AE6CF1139EA3E200373814 /* play-stop.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "play-stop.png"; sourceTree = "<group>"; };
+		92AE6CF2139EA3E200373814 /* record-start.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "record-start.png"; sourceTree = "<group>"; };
+		92AE6CF3139EA3E200373814 /* record-stop.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "record-stop.png"; sourceTree = "<group>"; };
 		948D8C13139E9C4300C5877F /* VLS-Project.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "VLS-Project.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		948D8C17139E9C4300C5877F /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		948D8C19139E9C4300C5877F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -128,6 +138,11 @@
 		948D8C20139E9C4300C5877F /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				92AE6CEF139EA3E200373814 /* microphone.png */,
+				92AE6CF0139EA3E200373814 /* play-start.png */,
+				92AE6CF1139EA3E200373814 /* play-stop.png */,
+				92AE6CF2139EA3E200373814 /* record-start.png */,
+				92AE6CF3139EA3E200373814 /* record-stop.png */,
 				948D8C21139E9C4300C5877F /* VLS-Project-Info.plist */,
 				948D8C22139E9C4300C5877F /* InfoPlist.strings */,
 				948D8C25139E9C4300C5877F /* VLS-Project-Prefix.pch */,
@@ -225,6 +240,11 @@
 			files = (
 				948D8C24139E9C4300C5877F /* InfoPlist.strings in Resources */,
 				948D8C2D139E9C4300C5877F /* MainWindow.xib in Resources */,
+				92AE6CF4139EA3E200373814 /* microphone.png in Resources */,
+				92AE6CF5139EA3E200373814 /* play-start.png in Resources */,
+				92AE6CF6139EA3E200373814 /* play-stop.png in Resources */,
+				92AE6CF7139EA3E200373814 /* record-start.png in Resources */,
+				92AE6CF8139EA3E200373814 /* record-stop.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -439,6 +459,7 @@
 				948D8C4C139E9C4300C5877F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		948D8C4D139E9C4300C5877F /* Build configuration list for PBXNativeTarget "VLS-ProjectTests" */ = {
 			isa = XCConfigurationList;
@@ -447,6 +468,7 @@
 				948D8C4F139E9C4300C5877F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
