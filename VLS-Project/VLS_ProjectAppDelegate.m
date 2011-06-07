@@ -22,7 +22,12 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
+	navController = [[UINavigationController alloc] init];
     [self.window makeKeyAndVisible];
+    RecordVC *firstVC = [[RecordVC alloc] init];
+    [navController pushViewController:firstVC animated:NO];
+    [self.window addSubview:navController.view];
+
     return YES;
 }
 

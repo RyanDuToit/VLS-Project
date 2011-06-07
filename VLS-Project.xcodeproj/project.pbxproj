@@ -12,6 +12,8 @@
 		92AE6CF6139EA3E200373814 /* play-stop.png in Resources */ = {isa = PBXBuildFile; fileRef = 92AE6CF1139EA3E200373814 /* play-stop.png */; };
 		92AE6CF7139EA3E200373814 /* record-start.png in Resources */ = {isa = PBXBuildFile; fileRef = 92AE6CF2139EA3E200373814 /* record-start.png */; };
 		92AE6CF8139EA3E200373814 /* record-stop.png in Resources */ = {isa = PBXBuildFile; fileRef = 92AE6CF3139EA3E200373814 /* record-stop.png */; };
+		944A610F139EA74D008C0F71 /* RecordVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 944A610D139EA74D008C0F71 /* RecordVC.m */; };
+		944A6110139EA74D008C0F71 /* RecordVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 944A610E139EA74D008C0F71 /* RecordVC.xib */; };
 		948D8C18139E9C4300C5877F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 948D8C17139E9C4300C5877F /* UIKit.framework */; };
 		948D8C1A139E9C4300C5877F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 948D8C19139E9C4300C5877F /* Foundation.framework */; };
 		948D8C1C139E9C4300C5877F /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 948D8C1B139E9C4300C5877F /* CoreGraphics.framework */; };
@@ -46,6 +48,9 @@
 		92AE6CF1139EA3E200373814 /* play-stop.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "play-stop.png"; sourceTree = "<group>"; };
 		92AE6CF2139EA3E200373814 /* record-start.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "record-start.png"; sourceTree = "<group>"; };
 		92AE6CF3139EA3E200373814 /* record-stop.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "record-stop.png"; sourceTree = "<group>"; };
+		944A610C139EA74D008C0F71 /* RecordVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RecordVC.h; sourceTree = "<group>"; };
+		944A610D139EA74D008C0F71 /* RecordVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RecordVC.m; sourceTree = "<group>"; };
+		944A610E139EA74D008C0F71 /* RecordVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RecordVC.xib; sourceTree = "<group>"; };
 		948D8C13139E9C4300C5877F /* VLS-Project.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "VLS-Project.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		948D8C17139E9C4300C5877F /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		948D8C19139E9C4300C5877F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -129,6 +134,9 @@
 				948D8C28139E9C4300C5877F /* VLS_ProjectAppDelegate.h */,
 				948D8C29139E9C4300C5877F /* VLS_ProjectAppDelegate.m */,
 				948D8C2B139E9C4300C5877F /* MainWindow.xib */,
+				944A610C139EA74D008C0F71 /* RecordVC.h */,
+				944A610D139EA74D008C0F71 /* RecordVC.m */,
+				944A610E139EA74D008C0F71 /* RecordVC.xib */,
 				948D8C2E139E9C4300C5877F /* VLS_Project.xcdatamodeld */,
 				948D8C20139E9C4300C5877F /* Supporting Files */,
 			);
@@ -245,6 +253,7 @@
 				92AE6CF6139EA3E200373814 /* play-stop.png in Resources */,
 				92AE6CF7139EA3E200373814 /* record-start.png in Resources */,
 				92AE6CF8139EA3E200373814 /* record-stop.png in Resources */,
+				944A6110139EA74D008C0F71 /* RecordVC.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -283,6 +292,7 @@
 				948D8C27139E9C4300C5877F /* main.m in Sources */,
 				948D8C2A139E9C4300C5877F /* VLS_ProjectAppDelegate.m in Sources */,
 				948D8C30139E9C4300C5877F /* VLS_Project.xcdatamodeld in Sources */,
+				944A610F139EA74D008C0F71 /* RecordVC.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
