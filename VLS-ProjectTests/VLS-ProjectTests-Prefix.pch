@@ -1,0 +1,7 @@
+//
+// Prefix header for all source files of the 'VLS-ProjectTests' target in the 'VLS-ProjectTests' project
+//
+
+#ifdef __OBJC__
+    #import <UIKit/UIKit.h>
+#endif

@@ -1,0 +1,467 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		948D8C18139E9C4300C5877F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 948D8C17139E9C4300C5877F /* UIKit.framework */; };
+		948D8C1A139E9C4300C5877F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 948D8C19139E9C4300C5877F /* Foundation.framework */; };
+		948D8C1C139E9C4300C5877F /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 948D8C1B139E9C4300C5877F /* CoreGraphics.framework */; };
+		948D8C1E139E9C4300C5877F /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 948D8C1D139E9C4300C5877F /* CoreData.framework */; };
+		948D8C24139E9C4300C5877F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 948D8C22139E9C4300C5877F /* InfoPlist.strings */; };
+		948D8C27139E9C4300C5877F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 948D8C26139E9C4300C5877F /* main.m */; };
+		948D8C2A139E9C4300C5877F /* VLS_ProjectAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 948D8C29139E9C4300C5877F /* VLS_ProjectAppDelegate.m */; };
+		948D8C2D139E9C4300C5877F /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 948D8C2B139E9C4300C5877F /* MainWindow.xib */; };
+		948D8C30139E9C4300C5877F /* VLS_Project.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 948D8C2E139E9C4300C5877F /* VLS_Project.xcdatamodeld */; };
+		948D8C37139E9C4300C5877F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 948D8C17139E9C4300C5877F /* UIKit.framework */; };
+		948D8C38139E9C4300C5877F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 948D8C19139E9C4300C5877F /* Foundation.framework */; };
+		948D8C39139E9C4300C5877F /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 948D8C1B139E9C4300C5877F /* CoreGraphics.framework */; };
+		948D8C3A139E9C4300C5877F /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 948D8C1D139E9C4300C5877F /* CoreData.framework */; };
+		948D8C42139E9C4300C5877F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 948D8C40139E9C4300C5877F /* InfoPlist.strings */; };
+		948D8C45139E9C4300C5877F /* VLS_ProjectTests.h in Resources */ = {isa = PBXBuildFile; fileRef = 948D8C44139E9C4300C5877F /* VLS_ProjectTests.h */; };
+		948D8C47139E9C4300C5877F /* VLS_ProjectTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 948D8C46139E9C4300C5877F /* VLS_ProjectTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		948D8C3B139E9C4300C5877F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 948D8C0A139E9C4300C5877F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 948D8C12139E9C4300C5877F;
+			remoteInfo = "VLS-Project";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		948D8C13139E9C4300C5877F /* VLS-Project.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "VLS-Project.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		948D8C17139E9C4300C5877F /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		948D8C19139E9C4300C5877F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		948D8C1B139E9C4300C5877F /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		948D8C1D139E9C4300C5877F /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		948D8C21139E9C4300C5877F /* VLS-Project-Info.plist */ = {isa = PBXFileReference; path = "VLS-Project-Info.plist"; sourceTree = "<group>"; };
+		948D8C23139E9C4300C5877F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		948D8C25139E9C4300C5877F /* VLS-Project-Prefix.pch */ = {isa = PBXFileReference; path = "VLS-Project-Prefix.pch"; sourceTree = "<group>"; };
+		948D8C26139E9C4300C5877F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		948D8C28139E9C4300C5877F /* VLS_ProjectAppDelegate.h */ = {isa = PBXFileReference; path = VLS_ProjectAppDelegate.h; sourceTree = "<group>"; };
+		948D8C29139E9C4300C5877F /* VLS_ProjectAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VLS_ProjectAppDelegate.m; sourceTree = "<group>"; };
+		948D8C2C139E9C4300C5877F /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainWindow.xib; sourceTree = "<group>"; };
+		948D8C2F139E9C4300C5877F /* VLS_Project.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = VLS_Project.xcdatamodel; sourceTree = "<group>"; };
+		948D8C36139E9C4300C5877F /* VLS-ProjectTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "VLS-ProjectTests.octest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		948D8C3F139E9C4300C5877F /* VLS-ProjectTests-Info.plist */ = {isa = PBXFileReference; path = "VLS-ProjectTests-Info.plist"; sourceTree = "<group>"; };
+		948D8C41139E9C4300C5877F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		948D8C43139E9C4300C5877F /* VLS-ProjectTests-Prefix.pch */ = {isa = PBXFileReference; path = "VLS-ProjectTests-Prefix.pch"; sourceTree = "<group>"; };
+		948D8C44139E9C4300C5877F /* VLS_ProjectTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VLS_ProjectTests.h; sourceTree = "<group>"; };
+		948D8C46139E9C4300C5877F /* VLS_ProjectTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VLS_ProjectTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		948D8C10139E9C4300C5877F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				948D8C18139E9C4300C5877F /* UIKit.framework in Frameworks */,
+				948D8C1A139E9C4300C5877F /* Foundation.framework in Frameworks */,
+				948D8C1C139E9C4300C5877F /* CoreGraphics.framework in Frameworks */,
+				948D8C1E139E9C4300C5877F /* CoreData.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		948D8C32139E9C4300C5877F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				948D8C37139E9C4300C5877F /* UIKit.framework in Frameworks */,
+				948D8C38139E9C4300C5877F /* Foundation.framework in Frameworks */,
+				948D8C39139E9C4300C5877F /* CoreGraphics.framework in Frameworks */,
+				948D8C3A139E9C4300C5877F /* CoreData.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		948D8C08139E9C4300C5877F = {
+			isa = PBXGroup;
+			children = (
+				948D8C1F139E9C4300C5877F /* VLS-Project */,
+				948D8C3D139E9C4300C5877F /* VLS-ProjectTests */,
+				948D8C16139E9C4300C5877F /* Frameworks */,
+				948D8C14139E9C4300C5877F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		948D8C14139E9C4300C5877F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				948D8C13139E9C4300C5877F /* VLS-Project.app */,
+				948D8C36139E9C4300C5877F /* VLS-ProjectTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		948D8C16139E9C4300C5877F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				948D8C17139E9C4300C5877F /* UIKit.framework */,
+				948D8C19139E9C4300C5877F /* Foundation.framework */,
+				948D8C1B139E9C4300C5877F /* CoreGraphics.framework */,
+				948D8C1D139E9C4300C5877F /* CoreData.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		948D8C1F139E9C4300C5877F /* VLS-Project */ = {
+			isa = PBXGroup;
+			children = (
+				948D8C28139E9C4300C5877F /* VLS_ProjectAppDelegate.h */,
+				948D8C29139E9C4300C5877F /* VLS_ProjectAppDelegate.m */,
+				948D8C2B139E9C4300C5877F /* MainWindow.xib */,
+				948D8C2E139E9C4300C5877F /* VLS_Project.xcdatamodeld */,
+				948D8C20139E9C4300C5877F /* Supporting Files */,
+			);
+			path = "VLS-Project";
+			sourceTree = "<group>";
+		};
+		948D8C20139E9C4300C5877F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				948D8C21139E9C4300C5877F /* VLS-Project-Info.plist */,
+				948D8C22139E9C4300C5877F /* InfoPlist.strings */,
+				948D8C25139E9C4300C5877F /* VLS-Project-Prefix.pch */,
+				948D8C26139E9C4300C5877F /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		948D8C3D139E9C4300C5877F /* VLS-ProjectTests */ = {
+			isa = PBXGroup;
+			children = (
+				948D8C44139E9C4300C5877F /* VLS_ProjectTests.h */,
+				948D8C46139E9C4300C5877F /* VLS_ProjectTests.m */,
+				948D8C3E139E9C4300C5877F /* Supporting Files */,
+			);
+			path = "VLS-ProjectTests";
+			sourceTree = "<group>";
+		};
+		948D8C3E139E9C4300C5877F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				948D8C3F139E9C4300C5877F /* VLS-ProjectTests-Info.plist */,
+				948D8C40139E9C4300C5877F /* InfoPlist.strings */,
+				948D8C43139E9C4300C5877F /* VLS-ProjectTests-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		948D8C12139E9C4300C5877F /* VLS-Project */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 948D8C4A139E9C4300C5877F /* Build configuration list for PBXNativeTarget "VLS-Project" */;
+			buildPhases = (
+				948D8C0F139E9C4300C5877F /* Sources */,
+				948D8C10139E9C4300C5877F /* Frameworks */,
+				948D8C11139E9C4300C5877F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "VLS-Project";
+			productName = "VLS-Project";
+			productReference = 948D8C13139E9C4300C5877F /* VLS-Project.app */;
+			productType = "com.apple.product-type.application";
+		};
+		948D8C35139E9C4300C5877F /* VLS-ProjectTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 948D8C4D139E9C4300C5877F /* Build configuration list for PBXNativeTarget "VLS-ProjectTests" */;
+			buildPhases = (
+				948D8C31139E9C4300C5877F /* Sources */,
+				948D8C32139E9C4300C5877F /* Frameworks */,
+				948D8C33139E9C4300C5877F /* Resources */,
+				948D8C34139E9C4300C5877F /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				948D8C3C139E9C4300C5877F /* PBXTargetDependency */,
+			);
+			name = "VLS-ProjectTests";
+			productName = "VLS-ProjectTests";
+			productReference = 948D8C36139E9C4300C5877F /* VLS-ProjectTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		948D8C0A139E9C4300C5877F /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = 948D8C0D139E9C4300C5877F /* Build configuration list for PBXProject "VLS-Project" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 948D8C08139E9C4300C5877F;
+			productRefGroup = 948D8C14139E9C4300C5877F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				948D8C12139E9C4300C5877F /* VLS-Project */,
+				948D8C35139E9C4300C5877F /* VLS-ProjectTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		948D8C11139E9C4300C5877F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				948D8C24139E9C4300C5877F /* InfoPlist.strings in Resources */,
+				948D8C2D139E9C4300C5877F /* MainWindow.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		948D8C33139E9C4300C5877F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				948D8C42139E9C4300C5877F /* InfoPlist.strings in Resources */,
+				948D8C45139E9C4300C5877F /* VLS_ProjectTests.h in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		948D8C34139E9C4300C5877F /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		948D8C0F139E9C4300C5877F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				948D8C27139E9C4300C5877F /* main.m in Sources */,
+				948D8C2A139E9C4300C5877F /* VLS_ProjectAppDelegate.m in Sources */,
+				948D8C30139E9C4300C5877F /* VLS_Project.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		948D8C31139E9C4300C5877F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				948D8C47139E9C4300C5877F /* VLS_ProjectTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		948D8C3C139E9C4300C5877F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 948D8C12139E9C4300C5877F /* VLS-Project */;
+			targetProxy = 948D8C3B139E9C4300C5877F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		948D8C22139E9C4300C5877F /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				948D8C23139E9C4300C5877F /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		948D8C2B139E9C4300C5877F /* MainWindow.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				948D8C2C139E9C4300C5877F /* en */,
+			);
+			name = MainWindow.xib;
+			sourceTree = "<group>";
+		};
+		948D8C40139E9C4300C5877F /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				948D8C41139E9C4300C5877F /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		948D8C48139E9C4300C5877F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_UNIVERSAL_IPHONE_OS)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Debug;
+		};
+		948D8C49139E9C4300C5877F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_UNIVERSAL_IPHONE_OS)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Release;
+		};
+		948D8C4B139E9C4300C5877F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "VLS-Project/VLS-Project-Prefix.pch";
+				INFOPLIST_FILE = "VLS-Project/VLS-Project-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		948D8C4C139E9C4300C5877F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "VLS-Project/VLS-Project-Prefix.pch";
+				INFOPLIST_FILE = "VLS-Project/VLS-Project-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				VALIDATE_PRODUCT = YES;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		948D8C4E139E9C4300C5877F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/VLS-Project.app/VLS-Project";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "VLS-ProjectTests/VLS-ProjectTests-Prefix.pch";
+				INFOPLIST_FILE = "VLS-ProjectTests/VLS-ProjectTests-Info.plist";
+				OTHER_LDFLAGS = (
+					"-framework",
+					SenTestingKit,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		948D8C4F139E9C4300C5877F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/VLS-Project.app/VLS-Project";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "VLS-ProjectTests/VLS-ProjectTests-Prefix.pch";
+				INFOPLIST_FILE = "VLS-ProjectTests/VLS-ProjectTests-Info.plist";
+				OTHER_LDFLAGS = (
+					"-framework",
+					SenTestingKit,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		948D8C0D139E9C4300C5877F /* Build configuration list for PBXProject "VLS-Project" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				948D8C48139E9C4300C5877F /* Debug */,
+				948D8C49139E9C4300C5877F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		948D8C4A139E9C4300C5877F /* Build configuration list for PBXNativeTarget "VLS-Project" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				948D8C4B139E9C4300C5877F /* Debug */,
+				948D8C4C139E9C4300C5877F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		948D8C4D139E9C4300C5877F /* Build configuration list for PBXNativeTarget "VLS-ProjectTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				948D8C4E139E9C4300C5877F /* Debug */,
+				948D8C4F139E9C4300C5877F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		948D8C2E139E9C4300C5877F /* VLS_Project.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				948D8C2F139E9C4300C5877F /* VLS_Project.xcdatamodel */,
+			);
+			currentVersion = 948D8C2F139E9C4300C5877F /* VLS_Project.xcdatamodel */;
+			path = VLS_Project.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 948D8C0A139E9C4300C5877F /* Project object */;
+}
