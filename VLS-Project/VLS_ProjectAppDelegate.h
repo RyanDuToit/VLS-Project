@@ -4,11 +4,6 @@
 //
 //  Created by Ryan Dutoit on 6/7/11.
 //  Copyright 2011 __MyCompanyName__. All rights reserved.
-// hi
-// new commit
-
-//updated by Bennett at 1:14
-
 
 #import <UIKit/UIKit.h>
 
