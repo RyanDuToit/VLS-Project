@@ -10,11 +10,12 @@
 
 
 @interface RecordVC : UIViewController {
-    
     UIButton *recordButton;
     UIButton *playButton;
-    int checkrecord;
+    int checkRecord;
+    int checkPlay;
 }
+
 @property (nonatomic, retain) IBOutlet UIButton *recordButton;
 
 - (IBAction)togglePlay:(id)sender;

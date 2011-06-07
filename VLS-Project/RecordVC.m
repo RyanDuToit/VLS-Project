@@ -42,6 +42,9 @@
 - (void)viewDidLoad
 {
     playButton.enabled = NO;
+    checkRecord=0;
+    checkPlay=0;
+    
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
 }
@@ -62,22 +65,26 @@
 }
 
 - (IBAction)togglePlay:(id)sender {
-
+    if (checkPlay%2==1) {
+        [playButton setImage:[UIImage imageNamed:@"play-start.png"] forState:UIControlStateNormal];
+        recordButton.enabled = YES;
+    }
+    else {
+        [playButton setImage:[UIImage imageNamed:@"play-stop.png"] forState:UIControlStateNormal];
+        recordButton.enabled = NO;
+    }
+    checkPlay++;
 }
 
 - (IBAction)toggleRecord:(id)sender {
-        //switch to record image
-    //if([recordButton.currentImage isEqual:[UIImage imageNamed:@"record-play.png"]])
-    if (checkrecord%2==0) {
-            [recordButton setImage:[UIImage imageNamed:@"record-stop.png"] forState:UIControlStateNormal];
+    if (checkRecord%2==0) {
+        [recordButton setImage:[UIImage imageNamed:@"record-stop.png"] forState:UIControlStateNormal];
+        playButton.enabled = NO;
     }
-
-    
-    
-    else
-    {
-         [recordButton setImage:[UIImage imageNamed:@"record-start.png"] forState:UIControlStateNormal];
+    else {
+        [recordButton setImage:[UIImage imageNamed:@"record-start.png"] forState:UIControlStateNormal];
+        playButton.enabled = YES;
     }
-    checkrecord++;
+    checkRecord++;
 }
 @end
