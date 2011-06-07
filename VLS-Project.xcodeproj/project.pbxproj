@@ -41,18 +41,18 @@
 		948D8C19139E9C4300C5877F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		948D8C1B139E9C4300C5877F /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		948D8C1D139E9C4300C5877F /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
-		948D8C21139E9C4300C5877F /* VLS-Project-Info.plist */ = {isa = PBXFileReference; path = "VLS-Project-Info.plist"; sourceTree = "<group>"; };
+		948D8C21139E9C4300C5877F /* VLS-Project-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "VLS-Project-Info.plist"; sourceTree = "<group>"; };
 		948D8C23139E9C4300C5877F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		948D8C25139E9C4300C5877F /* VLS-Project-Prefix.pch */ = {isa = PBXFileReference; path = "VLS-Project-Prefix.pch"; sourceTree = "<group>"; };
+		948D8C25139E9C4300C5877F /* VLS-Project-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "VLS-Project-Prefix.pch"; sourceTree = "<group>"; };
 		948D8C26139E9C4300C5877F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		948D8C28139E9C4300C5877F /* VLS_ProjectAppDelegate.h */ = {isa = PBXFileReference; path = VLS_ProjectAppDelegate.h; sourceTree = "<group>"; };
+		948D8C28139E9C4300C5877F /* VLS_ProjectAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VLS_ProjectAppDelegate.h; sourceTree = "<group>"; };
 		948D8C29139E9C4300C5877F /* VLS_ProjectAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VLS_ProjectAppDelegate.m; sourceTree = "<group>"; };
 		948D8C2C139E9C4300C5877F /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainWindow.xib; sourceTree = "<group>"; };
 		948D8C2F139E9C4300C5877F /* VLS_Project.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = VLS_Project.xcdatamodel; sourceTree = "<group>"; };
 		948D8C36139E9C4300C5877F /* VLS-ProjectTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "VLS-ProjectTests.octest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		948D8C3F139E9C4300C5877F /* VLS-ProjectTests-Info.plist */ = {isa = PBXFileReference; path = "VLS-ProjectTests-Info.plist"; sourceTree = "<group>"; };
+		948D8C3F139E9C4300C5877F /* VLS-ProjectTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "VLS-ProjectTests-Info.plist"; sourceTree = "<group>"; };
 		948D8C41139E9C4300C5877F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		948D8C43139E9C4300C5877F /* VLS-ProjectTests-Prefix.pch */ = {isa = PBXFileReference; path = "VLS-ProjectTests-Prefix.pch"; sourceTree = "<group>"; };
+		948D8C43139E9C4300C5877F /* VLS-ProjectTests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "VLS-ProjectTests-Prefix.pch"; sourceTree = "<group>"; };
 		948D8C44139E9C4300C5877F /* VLS_ProjectTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VLS_ProjectTests.h; sourceTree = "<group>"; };
 		948D8C46139E9C4300C5877F /* VLS_ProjectTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VLS_ProjectTests.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
