@@ -16,6 +16,7 @@ AVAudioSessionDelegate, AVAudioPlayerDelegate> {
     int checkRecord;
     int checkPlay;
     UIProgressView *progressBar;
+    UIButton *saveButton;
 }
 
 @property (nonatomic, retain) IBOutlet UIProgressView *progressBar;
@@ -23,8 +24,10 @@ AVAudioSessionDelegate, AVAudioPlayerDelegate> {
 @property (nonatomic, retain) IBOutlet UIButton *playButton;
 @property (nonatomic, retain) AVAudioRecorder *audioRecorder;
 @property (nonatomic, retain) AVAudioPlayer *audioPlayer;
+@property (nonatomic, retain) IBOutlet UIButton *saveButton;
 
 - (IBAction)togglePlay:(id)sender;
 - (IBAction)toggleRecord:(id)sender;
+- (IBAction)saveAction:(id)sender;
 
 @end

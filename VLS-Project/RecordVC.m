@@ -15,6 +15,7 @@
 @synthesize recordButton;
 @synthesize playButton;
 @synthesize audioPlayer;
+@synthesize saveButton;
 @synthesize audioRecorder;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
@@ -31,6 +32,7 @@
     [recordButton release];
     [playButton release];
     [progressBar release];
+    [saveButton release];
     [super dealloc];
 }
 
@@ -55,6 +57,7 @@
     [self setRecordButton:nil];
     [self setPlayButton:nil];
     [self setProgressBar:nil];
+    [self setSaveButton:nil];
     [super viewDidUnload];
     // Release any retained subviews of the main view.
     // e.g. self.myOutlet = nil;
@@ -149,6 +152,9 @@
 
     }
     checkRecord++;
+}
+
+- (IBAction)saveAction:(id)sender {
 }
 - (void)updateDisplay {
     if (checkPlay%2==0) {
