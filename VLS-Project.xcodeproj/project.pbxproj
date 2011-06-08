@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		92A099C8139FD026001C3A69 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 92A099C7139FD026001C3A69 /* AVFoundation.framework */; };
+		92A099D3139FDE9F001C3A69 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 92A099D2139FDE9F001C3A69 /* AVFoundation.framework */; };
 		92AE6CF4139EA3E200373814 /* microphone.png in Resources */ = {isa = PBXBuildFile; fileRef = 92AE6CEF139EA3E200373814 /* microphone.png */; };
 		92AE6CF5139EA3E200373814 /* play-start.png in Resources */ = {isa = PBXBuildFile; fileRef = 92AE6CF0139EA3E200373814 /* play-start.png */; };
 		92AE6CF6139EA3E200373814 /* play-stop.png in Resources */ = {isa = PBXBuildFile; fileRef = 92AE6CF1139EA3E200373814 /* play-stop.png */; };
@@ -44,7 +44,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		92A099C7139FD026001C3A69 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		92A099D2139FDE9F001C3A69 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		92AE6CEF139EA3E200373814 /* microphone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = microphone.png; sourceTree = "<group>"; };
 		92AE6CF0139EA3E200373814 /* play-start.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "play-start.png"; sourceTree = "<group>"; };
 		92AE6CF1139EA3E200373814 /* play-stop.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "play-stop.png"; sourceTree = "<group>"; };
@@ -72,7 +72,6 @@
 		948D8C43139E9C4300C5877F /* VLS-ProjectTests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "VLS-ProjectTests-Prefix.pch"; sourceTree = "<group>"; };
 		948D8C44139E9C4300C5877F /* VLS_ProjectTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VLS_ProjectTests.h; sourceTree = "<group>"; };
 		948D8C46139E9C4300C5877F /* VLS_ProjectTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VLS_ProjectTests.m; sourceTree = "<group>"; };
-		949DDE71139FDAF400B53B88 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,7 +79,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				92A099C8139FD026001C3A69 /* AVFoundation.framework in Frameworks */,
+				92A099D3139FDE9F001C3A69 /* AVFoundation.framework in Frameworks */,
 				948D8C18139E9C4300C5877F /* UIKit.framework in Frameworks */,
 				948D8C1A139E9C4300C5877F /* Foundation.framework in Frameworks */,
 				948D8C1C139E9C4300C5877F /* CoreGraphics.framework in Frameworks */,
@@ -105,8 +104,6 @@
 		948D8C08139E9C4300C5877F = {
 			isa = PBXGroup;
 			children = (
-				949DDE71139FDAF400B53B88 /* AVFoundation.framework */,
-				92A099C7139FD026001C3A69 /* AVFoundation.framework */,
 				948D8C1F139E9C4300C5877F /* VLS-Project */,
 				948D8C3D139E9C4300C5877F /* VLS-ProjectTests */,
 				948D8C16139E9C4300C5877F /* Frameworks */,
@@ -126,6 +123,7 @@
 		948D8C16139E9C4300C5877F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				92A099D2139FDE9F001C3A69 /* AVFoundation.framework */,
 				948D8C17139E9C4300C5877F /* UIKit.framework */,
 				948D8C19139E9C4300C5877F /* Foundation.framework */,
 				948D8C1B139E9C4300C5877F /* CoreGraphics.framework */,
