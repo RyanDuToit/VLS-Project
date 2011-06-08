@@ -7,12 +7,14 @@
 //
 
 #import "RecordVC.h"
-
+#import <CoreAudio/CoreAudioTypes.h>
 
 @implementation RecordVC
 @synthesize progressBar;
 @synthesize recordButton;
 @synthesize playButton;
+@synthesize audioPlayer;
+@synthesize audioRecorder;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -41,7 +43,7 @@
 
 #pragma mark - View lifecycle
 
-- (void)viewDidLoad
+- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
 {
     progressBar.progress=0.0;
     playButton.enabled = NO;
@@ -61,10 +63,34 @@
     // e.g. self.myOutlet = nil;
 }
 
-- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
-{
-    // Return YES for supported orientations
-	return YES;
+-(NSURL *) getSoundURL {
+    NSArray *segments = [NSArray arrayWithObjects:NSHomeDirectory(), @"Documents", @"recording.caf", nil];
+    NSString *soundFilePath = [NSString pathWithComponents:segments];
+    return [[[NSURL alloc] initFileURLWithPath:soundFilePath] autorelease];
+}
+
+-(void) setupAudioSession {
+    AVAudioSession *audioSession = [AVAudioSession sharedInstance];
+    audioSession.delegate = self;
+    [audioSession setActive:YES error:NULL];
+    [audioSession setCategory:AVAudioSessionCategoryPlayAndRecord error:NULL];
+}
+
+-(void) tearDownAudioSession {
+    [[AVAudioSession sharedInstance] setActive:NO error:NULL];
+}
+
+-(void) setupRecorder {
+    [self setupAudioSession];
+    NSDictionary *recordSettings = [NSDictionary dictionaryWithObjectsAndKeys:
+                                    [NSNumber numberWithFloat:44100.0], AVSampleRateKey,
+                                    [NSNumber numberWithInt:kAudioFormatAppleLossless], AVFormatIDKey,
+                                    [NSNumber numberWithInt:1], AVNumberOfChannelsKey,
+                                    [NSNumber numberWithInt:AVAudioQualityMax], AVEncoderAudioQualityKey,
+                                    nil];
+    self.audioRecorder = [[AVAudioRecorder alloc] initWithURL:[self getSoundURL] settings:recordSettings error:NULL];
+    self.audioRecorder.delegate = self;
+    [self.audioRecorder prepareToRecord];
 }
 
 - (IBAction)togglePlay:(id)sender {
@@ -92,6 +118,9 @@
         progressBar.progressViewStyle=UIProgressViewStyleBar;
         [recordButton setImage:[UIImage imageNamed:@"record-stop.png"] forState:UIControlStateNormal];
         playButton.enabled = NO;
+       
+        [self setupAudioSession];
+        [self.audioRecorder record];
     }
     //record stop
     else {
@@ -99,7 +128,31 @@
         progressBar.progressViewStyle=UIProgressViewStyleDefault;
         [recordButton setImage:[UIImage imageNamed:@"record-start.png"] forState:UIControlStateNormal];
         playButton.enabled = YES;
+        
+        [self tearDownAudioSession];
+        [self.audioRecorder stop];
     }
     checkRecord++;
 }
+
+- (void)viewDidLoad
+{
+    playButton.enabled = NO;
+    checkRecord=0;
+    checkPlay=0;
+    [self setupRecorder];
+    
+    [super viewDidLoad];
+    // Do any additional setup after loading the view from its nib.
+}
+
+- (void)viewDidUnload
+{
+    [self setRecordButton:nil];
+    [self setPlayButton:nil];
+    [super viewDidUnload];
+    // Release any retained subviews of the main view.
+    // e.g. self.myOutlet = nil;
+}
+
 @end

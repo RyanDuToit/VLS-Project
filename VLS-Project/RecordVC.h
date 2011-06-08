@@ -7,9 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <AVFoundation/AVFoundation.h>
 
-
-@interface RecordVC : UIViewController {
+@interface RecordVC : UIViewController <AVAudioRecorderDelegate,
+AVAudioSessionDelegate, AVAudioPlayerDelegate> {
     UIButton *recordButton;
     UIButton *playButton;
     int checkRecord;
