@@ -10,6 +10,7 @@
 
 
 @implementation RecordVC
+@synthesize progressBar;
 @synthesize recordButton;
 @synthesize playButton;
 
@@ -26,6 +27,7 @@
 {
     [recordButton release];
     [playButton release];
+    [progressBar release];
     [super dealloc];
 }
 
@@ -53,6 +55,7 @@
 {
     [self setRecordButton:nil];
     [self setPlayButton:nil];
+    [self setProgressBar:nil];
     [super viewDidUnload];
     // Release any retained subviews of the main view.
     // e.g. self.myOutlet = nil;
@@ -65,10 +68,12 @@
 }
 
 - (IBAction)togglePlay:(id)sender {
+    //play start
     if (checkPlay%2==1) {
         [playButton setImage:[UIImage imageNamed:@"play-start.png"] forState:UIControlStateNormal];
         recordButton.enabled = YES;
     }
+    //play stop
     else {
         [playButton setImage:[UIImage imageNamed:@"play-stop.png"] forState:UIControlStateNormal];
         recordButton.enabled = NO;
@@ -77,10 +82,12 @@
 }
 
 - (IBAction)toggleRecord:(id)sender {
+    //record start
     if (checkRecord%2==0) {
         [recordButton setImage:[UIImage imageNamed:@"record-stop.png"] forState:UIControlStateNormal];
         playButton.enabled = NO;
     }
+    //record stop
     else {
         [recordButton setImage:[UIImage imageNamed:@"record-start.png"] forState:UIControlStateNormal];
         playButton.enabled = YES;

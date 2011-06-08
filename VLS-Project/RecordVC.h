@@ -14,8 +14,10 @@
     UIButton *playButton;
     int checkRecord;
     int checkPlay;
+    UIProgressView *progressBar;
 }
 
+@property (nonatomic, retain) IBOutlet UIProgressView *progressBar;
 @property (nonatomic, retain) IBOutlet UIButton *recordButton;
 
 - (IBAction)togglePlay:(id)sender;
