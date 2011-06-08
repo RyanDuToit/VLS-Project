@@ -8,6 +8,7 @@
 
 #import "VLS_ProjectAppDelegate.h"
 #import "RecordVC.h"
+#import "SavedRecordingsVC.h"
 
 @implementation VLS_ProjectAppDelegate
 
@@ -24,10 +25,23 @@
 {
     // Override point for customization after application launch.
 	navController = [[UINavigationController alloc] init];
-    [self.window makeKeyAndVisible];
+
     RecordVC *firstVC = [[RecordVC alloc] init];
+    firstVC.title = @"Record";
+    firstVC.tabBarItem.image = [UIImage imageNamed:@"66-microphone.png"];
+
+    SavedRecordingsVC *secondVC = [[SavedRecordingsVC alloc] init];
+    secondVC.title = @"Saved Recordings";
+    secondVC.tabBarItem.image = [UIImage imageNamed:@"159-voicemail.png"];
+    
+    tabBarController = [[UITabBarController alloc] init];
+    NSArray *myArray = [NSArray arrayWithObjects:firstVC, secondVC, nil];
+    tabBarController.viewControllers = myArray;
+    
     [navController pushViewController:firstVC animated:NO];
-    [self.window addSubview:navController.view];
+    
+    [self.window makeKeyAndVisible];
+    [self.window addSubview:tabBarController.view];
 
     return YES;
 }

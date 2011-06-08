@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		92A099D3139FDE9F001C3A69 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 92A099D2139FDE9F001C3A69 /* AVFoundation.framework */; };
+		92A09B7B139FEE12001C3A69 /* 66-microphone.png in Resources */ = {isa = PBXBuildFile; fileRef = 92A09B7A139FEE12001C3A69 /* 66-microphone.png */; };
+		92A09B7F139FEF18001C3A69 /* SavedRecordingsVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 92A09B7D139FEF18001C3A69 /* SavedRecordingsVC.m */; };
+		92A09B80139FEF18001C3A69 /* SavedRecordingsVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 92A09B7E139FEF18001C3A69 /* SavedRecordingsVC.xib */; };
+		92A09B82139FF03C001C3A69 /* 159-voicemail.png in Resources */ = {isa = PBXBuildFile; fileRef = 92A09B81139FF03B001C3A69 /* 159-voicemail.png */; };
 		92AE6CF4139EA3E200373814 /* microphone.png in Resources */ = {isa = PBXBuildFile; fileRef = 92AE6CEF139EA3E200373814 /* microphone.png */; };
 		92AE6CF5139EA3E200373814 /* play-start.png in Resources */ = {isa = PBXBuildFile; fileRef = 92AE6CF0139EA3E200373814 /* play-start.png */; };
 		92AE6CF6139EA3E200373814 /* play-stop.png in Resources */ = {isa = PBXBuildFile; fileRef = 92AE6CF1139EA3E200373814 /* play-stop.png */; };
@@ -45,6 +49,11 @@
 
 /* Begin PBXFileReference section */
 		92A099D2139FDE9F001C3A69 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		92A09B7A139FEE12001C3A69 /* 66-microphone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "66-microphone.png"; path = "../../glyphish-icons/icons/66-microphone.png"; sourceTree = "<group>"; };
+		92A09B7C139FEF18001C3A69 /* SavedRecordingsVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SavedRecordingsVC.h; sourceTree = "<group>"; };
+		92A09B7D139FEF18001C3A69 /* SavedRecordingsVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SavedRecordingsVC.m; sourceTree = "<group>"; };
+		92A09B7E139FEF18001C3A69 /* SavedRecordingsVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SavedRecordingsVC.xib; sourceTree = "<group>"; };
+		92A09B81139FF03B001C3A69 /* 159-voicemail.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "159-voicemail.png"; sourceTree = "<group>"; };
 		92AE6CEF139EA3E200373814 /* microphone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = microphone.png; sourceTree = "<group>"; };
 		92AE6CF0139EA3E200373814 /* play-start.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "play-start.png"; sourceTree = "<group>"; };
 		92AE6CF1139EA3E200373814 /* play-stop.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "play-stop.png"; sourceTree = "<group>"; };
@@ -137,6 +146,9 @@
 			children = (
 				948D8C28139E9C4300C5877F /* VLS_ProjectAppDelegate.h */,
 				948D8C29139E9C4300C5877F /* VLS_ProjectAppDelegate.m */,
+				92A09B7C139FEF18001C3A69 /* SavedRecordingsVC.h */,
+				92A09B7D139FEF18001C3A69 /* SavedRecordingsVC.m */,
+				92A09B7E139FEF18001C3A69 /* SavedRecordingsVC.xib */,
 				948D8C2B139E9C4300C5877F /* MainWindow.xib */,
 				944A610C139EA74D008C0F71 /* RecordVC.h */,
 				944A610D139EA74D008C0F71 /* RecordVC.m */,
@@ -150,6 +162,8 @@
 		948D8C20139E9C4300C5877F /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				92A09B7A139FEE12001C3A69 /* 66-microphone.png */,
+				92A09B81139FF03B001C3A69 /* 159-voicemail.png */,
 				92AE6CEF139EA3E200373814 /* microphone.png */,
 				92AE6CF0139EA3E200373814 /* play-start.png */,
 				92AE6CF1139EA3E200373814 /* play-stop.png */,
@@ -258,6 +272,9 @@
 				92AE6CF7139EA3E200373814 /* record-start.png in Resources */,
 				92AE6CF8139EA3E200373814 /* record-stop.png in Resources */,
 				944A6110139EA74D008C0F71 /* RecordVC.xib in Resources */,
+				92A09B7B139FEE12001C3A69 /* 66-microphone.png in Resources */,
+				92A09B80139FEF18001C3A69 /* SavedRecordingsVC.xib in Resources */,
+				92A09B82139FF03C001C3A69 /* 159-voicemail.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -297,6 +314,7 @@
 				948D8C2A139E9C4300C5877F /* VLS_ProjectAppDelegate.m in Sources */,
 				948D8C30139E9C4300C5877F /* VLS_Project.xcdatamodeld in Sources */,
 				944A610F139EA74D008C0F71 /* RecordVC.m in Sources */,
+				92A09B7F139FEF18001C3A69 /* SavedRecordingsVC.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -12,6 +12,7 @@
 @interface VLS_ProjectAppDelegate : NSObject <UIApplicationDelegate> {
     UIWindow *window;
     UINavigationController *navController;
+    UITabBarController *tabBarController;
 
 }
 
