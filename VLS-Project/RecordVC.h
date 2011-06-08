@@ -4,7 +4,7 @@
 //
 //  Created by Ryan Dutoit on 6/7/11.
 //  Copyright 2011 __MyCompanyName__. All rights reserved.
-//
+// testing change
 
 #import <UIKit/UIKit.h>
 #import <AVFoundation/AVFoundation.h>
@@ -15,8 +15,10 @@ AVAudioSessionDelegate, AVAudioPlayerDelegate> {
     UIButton *playButton;
     int checkRecord;
     int checkPlay;
+    UIProgressView *progressBar;
 }
 
+@property (nonatomic, retain) IBOutlet UIProgressView *progressBar;
 @property (nonatomic, retain) IBOutlet UIButton *recordButton;
 @property (nonatomic, retain) IBOutlet UIButton *playButton;
 @property (nonatomic, retain) AVAudioRecorder *audioRecorder;

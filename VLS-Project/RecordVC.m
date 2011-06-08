@@ -11,6 +11,7 @@
 
 @implementation RecordVC
 
+@synthesize progressBar;
 @synthesize recordButton;
 @synthesize playButton;
 @synthesize audioPlayer;
@@ -29,6 +30,7 @@
 {
     [recordButton release];
     [playButton release];
+    [progressBar release];
     [super dealloc];
 }
 
@@ -48,6 +50,15 @@
 	return YES;
 }
 
+- (void)viewDidUnload
+{
+    [self setRecordButton:nil];
+    [self setPlayButton:nil];
+    [self setProgressBar:nil];
+    [super viewDidUnload];
+    // Release any retained subviews of the main view.
+    // e.g. self.myOutlet = nil;
+}
 -(void) audioPlayerDidFinishPlaying:(AVAudioPlayer *)player successfully:(BOOL)completed {
     if (completed) {
         [playButton setImage:[UIImage imageNamed:@"play-start.png"] forState:UIControlStateNormal];
@@ -87,13 +98,16 @@
 }
 
 - (IBAction)togglePlay:(id)sender {
+    //play start
     if (checkPlay%2==1) {
+        
         [playButton setImage:[UIImage imageNamed:@"play-start.png"] forState:UIControlStateNormal];
         recordButton.enabled = YES;
         
         [self tearDownAudioSession];
         [self.audioPlayer stop];
     }
+    //play stop
     else {
         [playButton setImage:[UIImage imageNamed:@"play-stop.png"] forState:UIControlStateNormal];
         recordButton.enabled = NO;
@@ -103,19 +117,27 @@
         self.audioPlayer.delegate = self;
         [self.audioPlayer prepareToPlay];
         [self.audioPlayer play];
+        progressBar.progress=0;
     }
     checkPlay++;
 }
 
 - (IBAction)toggleRecord:(id)sender {
+
+    //record start
     if (checkRecord%2==0) {
+        progressBar.progress=0.0;
+        progressBar.progressViewStyle=UIProgressViewStyleBar;
         [recordButton setImage:[UIImage imageNamed:@"record-stop.png"] forState:UIControlStateNormal];
         playButton.enabled = NO;
        
         [self setupAudioSession];
         [self.audioRecorder record];
     }
+    //record stop
     else {
+        progressBar.progress=0.0;
+        progressBar.progressViewStyle=UIProgressViewStyleDefault;
         [recordButton setImage:[UIImage imageNamed:@"record-start.png"] forState:UIControlStateNormal];
         playButton.enabled = YES;
         
@@ -136,13 +158,5 @@
     // Do any additional setup after loading the view from its nib.
 }
 
-- (void)viewDidUnload
-{
-    [self setRecordButton:nil];
-    [self setPlayButton:nil];
-    [super viewDidUnload];
-    // Release any retained subviews of the main view.
-    // e.g. self.myOutlet = nil;
-}
 
 @end
