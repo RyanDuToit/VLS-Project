@@ -98,7 +98,7 @@
 }
 
 - (IBAction)togglePlay:(id)sender {
-    //play start
+    //play stop
     if (checkPlay%2==1) {
         
         [playButton setImage:[UIImage imageNamed:@"play-start.png"] forState:UIControlStateNormal];
@@ -106,45 +106,58 @@
         
         [self tearDownAudioSession];
         [self.audioPlayer stop];
+        progressBar.progress=0.0;
+
     }
-    //play stop
+    //play start
     else {
         [playButton setImage:[UIImage imageNamed:@"play-stop.png"] forState:UIControlStateNormal];
         recordButton.enabled = NO;
-       
+        
         [self setupAudioSession];
         self.audioPlayer = [[[AVAudioPlayer alloc] initWithContentsOfURL:[self getSoundURL] error:NULL] autorelease];
         self.audioPlayer.delegate = self;
         [self.audioPlayer prepareToPlay];
         [self.audioPlayer play];
+        
         progressBar.progress=0;
     }
     checkPlay++;
 }
 
 - (IBAction)toggleRecord:(id)sender {
-
+    
     //record start
     if (checkRecord%2==0) {
         progressBar.progress=0.0;
         progressBar.progressViewStyle=UIProgressViewStyleBar;
         [recordButton setImage:[UIImage imageNamed:@"record-stop.png"] forState:UIControlStateNormal];
         playButton.enabled = NO;
-       
+        
         [self setupAudioSession];
         [self.audioRecorder record];
     }
     //record stop
     else {
-        progressBar.progress=0.0;
         progressBar.progressViewStyle=UIProgressViewStyleDefault;
         [recordButton setImage:[UIImage imageNamed:@"record-start.png"] forState:UIControlStateNormal];
         playButton.enabled = YES;
         
         [self tearDownAudioSession];
         [self.audioRecorder stop];
+        progressBar.progress=0.0;
+
     }
     checkRecord++;
+}
+- (void)updateDisplay {
+    if (checkPlay%2==0) {
+        progressBar.progress=0;
+    }
+    else    {
+        self.progressBar.progress = self.audioPlayer.currentTime / 
+        self.audioPlayer.duration;
+    }
 }
 
 - (void)viewDidLoad
@@ -152,6 +165,9 @@
     playButton.enabled = NO;
     checkRecord=0;
     checkPlay=0;
+    [NSTimer scheduledTimerWithTimeInterval:.1 
+                                     target:self 
+                                   selector:@selector(updateDisplay) userInfo:nil repeats:YES];
     [self setupRecorder];
     
     [super viewDidLoad];
