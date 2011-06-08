@@ -50,7 +50,9 @@
 
 -(void) audioPlayerDidFinishPlaying:(AVAudioPlayer *)player successfully:(BOOL)completed {
     if (completed) {
-        //self.playButton.selected = NO;
+        [playButton setImage:[UIImage imageNamed:@"play-start.png"] forState:UIControlStateNormal];
+        checkPlay++;
+        recordButton.enabled = YES;
     }
 }
 
