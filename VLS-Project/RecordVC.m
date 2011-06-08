@@ -10,6 +10,7 @@
 #import <CoreAudio/CoreAudioTypes.h>
 
 @implementation RecordVC
+
 @synthesize progressBar;
 @synthesize recordButton;
 @synthesize playButton;
@@ -45,12 +46,8 @@
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
 {
-    progressBar.progress=0.0;
-    playButton.enabled = NO;
-    checkRecord=0;
-    checkPlay=0;
-    [super viewDidLoad];
-    // Do any additional setup after loading the view from its nib.
+    // Return YES for supported orientations
+	return YES;
 }
 
 - (void)viewDidUnload
@@ -61,6 +58,11 @@
     [super viewDidUnload];
     // Release any retained subviews of the main view.
     // e.g. self.myOutlet = nil;
+}
+-(void) audioPlayerDidFinishPlaying:(AVAudioPlayer *)player successfully:(BOOL)completed {
+    if (completed) {
+        //self.playButton.selected = NO;
+    }
 }
 
 -(NSURL *) getSoundURL {
@@ -100,11 +102,19 @@
         [playButton setImage:[UIImage imageNamed:@"play-start.png"] forState:UIControlStateNormal];
         recordButton.enabled = YES;
         
+        [self tearDownAudioSession];
+        [self.audioPlayer stop];
     }
     //play stop
     else {
         [playButton setImage:[UIImage imageNamed:@"play-stop.png"] forState:UIControlStateNormal];
         recordButton.enabled = NO;
+       
+        [self setupAudioSession];
+        self.audioPlayer = [[[AVAudioPlayer alloc] initWithContentsOfURL:[self getSoundURL] error:NULL] autorelease];
+        self.audioPlayer.delegate = self;
+        [self.audioPlayer prepareToPlay];
+        [self.audioPlayer play];
         progressBar.progress=0;
     }
     checkPlay++;
@@ -146,13 +156,5 @@
     // Do any additional setup after loading the view from its nib.
 }
 
-- (void)viewDidUnload
-{
-    [self setRecordButton:nil];
-    [self setPlayButton:nil];
-    [super viewDidUnload];
-    // Release any retained subviews of the main view.
-    // e.g. self.myOutlet = nil;
-}
 
 @end

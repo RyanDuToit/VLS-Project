@@ -72,6 +72,7 @@
 		948D8C43139E9C4300C5877F /* VLS-ProjectTests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "VLS-ProjectTests-Prefix.pch"; sourceTree = "<group>"; };
 		948D8C44139E9C4300C5877F /* VLS_ProjectTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VLS_ProjectTests.h; sourceTree = "<group>"; };
 		948D8C46139E9C4300C5877F /* VLS_ProjectTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VLS_ProjectTests.m; sourceTree = "<group>"; };
+		949DDE71139FDAF400B53B88 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +105,7 @@
 		948D8C08139E9C4300C5877F = {
 			isa = PBXGroup;
 			children = (
+				949DDE71139FDAF400B53B88 /* AVFoundation.framework */,
 				92A099C7139FD026001C3A69 /* AVFoundation.framework */,
 				948D8C1F139E9C4300C5877F /* VLS-Project */,
 				948D8C3D139E9C4300C5877F /* VLS-ProjectTests */,
