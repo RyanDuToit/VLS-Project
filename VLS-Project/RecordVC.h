@@ -19,9 +19,9 @@
 
 @property (nonatomic, retain) IBOutlet UIProgressView *progressBar;
 @property (nonatomic, retain) IBOutlet UIButton *recordButton;
+@property (nonatomic, retain) IBOutlet UIButton *playButton;
 
 - (IBAction)togglePlay:(id)sender;
 - (IBAction)toggleRecord:(id)sender;
 
-@property (nonatomic, retain) IBOutlet UIButton *playButton;
 @end

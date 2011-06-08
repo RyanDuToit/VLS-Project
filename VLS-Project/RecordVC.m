@@ -47,7 +47,6 @@
     playButton.enabled = NO;
     checkRecord=0;
     checkPlay=0;
-    
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
 }
@@ -71,13 +70,16 @@
 - (IBAction)togglePlay:(id)sender {
     //play start
     if (checkPlay%2==1) {
+        
         [playButton setImage:[UIImage imageNamed:@"play-start.png"] forState:UIControlStateNormal];
         recordButton.enabled = YES;
+        
     }
     //play stop
     else {
         [playButton setImage:[UIImage imageNamed:@"play-stop.png"] forState:UIControlStateNormal];
         recordButton.enabled = NO;
+        progressBar.progress=0;
     }
     checkPlay++;
 }
