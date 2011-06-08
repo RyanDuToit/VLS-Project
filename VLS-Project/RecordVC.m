@@ -43,6 +43,7 @@
 
 - (void)viewDidLoad
 {
+    progressBar.progress=0.0;
     playButton.enabled = NO;
     checkRecord=0;
     checkPlay=0;
@@ -82,13 +83,18 @@
 }
 
 - (IBAction)toggleRecord:(id)sender {
+
     //record start
     if (checkRecord%2==0) {
+        progressBar.progress=0.0;
+        progressBar.progressViewStyle=UIProgressViewStyleBar;
         [recordButton setImage:[UIImage imageNamed:@"record-stop.png"] forState:UIControlStateNormal];
         playButton.enabled = NO;
     }
     //record stop
     else {
+        progressBar.progress=0.0;
+        progressBar.progressViewStyle=UIProgressViewStyleDefault;
         [recordButton setImage:[UIImage imageNamed:@"record-start.png"] forState:UIControlStateNormal];
         playButton.enabled = YES;
     }
