@@ -7,6 +7,7 @@
 //
 
 #import "VLS_ProjectAppDelegate.h"
+#import "RecordVC.h"
 
 @implementation VLS_ProjectAppDelegate
 

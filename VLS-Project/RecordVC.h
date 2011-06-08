@@ -7,9 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <AVFoundation/AVFoundation.h>
 
-
-@interface RecordVC : UIViewController {
+@interface RecordVC : UIViewController <AVAudioRecorderDelegate,
+AVAudioSessionDelegate, AVAudioPlayerDelegate> {
     UIButton *recordButton;
     UIButton *playButton;
     int checkRecord;
@@ -17,9 +18,11 @@
 }
 
 @property (nonatomic, retain) IBOutlet UIButton *recordButton;
+@property (nonatomic, retain) IBOutlet UIButton *playButton;
+@property (nonatomic, retain) AVAudioRecorder *audioRecorder;
+@property (nonatomic, retain) AVAudioPlayer *audioPlayer;
 
 - (IBAction)togglePlay:(id)sender;
 - (IBAction)toggleRecord:(id)sender;
 
-@property (nonatomic, retain) IBOutlet UIButton *playButton;
 @end
