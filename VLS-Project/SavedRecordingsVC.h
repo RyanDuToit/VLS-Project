@@ -11,6 +11,8 @@
 
 @interface SavedRecordingsVC : UIViewController {
     
+    UIScrollView *scroller;
 }
+@property (nonatomic, retain) IBOutlet UIScrollView *scroller;
 
 @end

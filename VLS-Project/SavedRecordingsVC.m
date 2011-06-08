@@ -10,6 +10,7 @@
 
 
 @implementation SavedRecordingsVC
+@synthesize scroller;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -22,6 +23,7 @@
 
 - (void)dealloc
 {
+    [scroller release];
     [super dealloc];
 }
 
@@ -43,6 +45,7 @@
 
 - (void)viewDidUnload
 {
+    [self setScroller:nil];
     [super viewDidUnload];
     // Release any retained subviews of the main view.
     // e.g. self.myOutlet = nil;
