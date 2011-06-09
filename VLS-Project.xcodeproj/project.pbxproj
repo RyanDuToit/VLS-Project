@@ -17,10 +17,10 @@
 		92AE6CF6139EA3E200373814 /* play-stop.png in Resources */ = {isa = PBXBuildFile; fileRef = 92AE6CF1139EA3E200373814 /* play-stop.png */; };
 		92AE6CF7139EA3E200373814 /* record-start.png in Resources */ = {isa = PBXBuildFile; fileRef = 92AE6CF2139EA3E200373814 /* record-start.png */; };
 		92AE6CF8139EA3E200373814 /* record-stop.png in Resources */ = {isa = PBXBuildFile; fileRef = 92AE6CF3139EA3E200373814 /* record-stop.png */; };
-		940E0BEB13A1410B00FB8298 /* Recording.m in Sources */ = {isa = PBXBuildFile; fileRef = 940E0BEA13A1410B00FB8298 /* Recording.m */; };
-		940E0BEE13A1410C00FB8298 /* Annotation.m in Sources */ = {isa = PBXBuildFile; fileRef = 940E0BED13A1410C00FB8298 /* Annotation.m */; };
 		940E0C1413A14FFD00FB8298 /* SavedRecordingsListVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 940E0C1213A14FFC00FB8298 /* SavedRecordingsListVC.m */; };
 		940E0C1513A14FFD00FB8298 /* SavedRecordingsListVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 940E0C1313A14FFD00FB8298 /* SavedRecordingsListVC.xib */; };
+		9415AEEF13A15AF500B46CB2 /* Annotation.m in Sources */ = {isa = PBXBuildFile; fileRef = 9415AEEE13A15AF500B46CB2 /* Annotation.m */; };
+		9415AEF213A15AF500B46CB2 /* Recording.m in Sources */ = {isa = PBXBuildFile; fileRef = 9415AEF113A15AF500B46CB2 /* Recording.m */; };
 		944A610F139EA74D008C0F71 /* RecordVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 944A610D139EA74D008C0F71 /* RecordVC.m */; };
 		944A6110139EA74D008C0F71 /* RecordVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 944A610E139EA74D008C0F71 /* RecordVC.xib */; };
 		948D8C18139E9C4300C5877F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 948D8C17139E9C4300C5877F /* UIKit.framework */; };
@@ -63,13 +63,13 @@
 		92AE6CF1139EA3E200373814 /* play-stop.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "play-stop.png"; sourceTree = "<group>"; };
 		92AE6CF2139EA3E200373814 /* record-start.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "record-start.png"; sourceTree = "<group>"; };
 		92AE6CF3139EA3E200373814 /* record-stop.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "record-stop.png"; sourceTree = "<group>"; };
-		940E0BE913A1410A00FB8298 /* Recording.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Recording.h; path = ../Recording.h; sourceTree = "<group>"; };
-		940E0BEA13A1410B00FB8298 /* Recording.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Recording.m; path = ../Recording.m; sourceTree = "<group>"; };
-		940E0BEC13A1410C00FB8298 /* Annotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Annotation.h; path = ../Annotation.h; sourceTree = "<group>"; };
-		940E0BED13A1410C00FB8298 /* Annotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Annotation.m; path = ../Annotation.m; sourceTree = "<group>"; };
 		940E0C1113A14FFC00FB8298 /* SavedRecordingsListVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SavedRecordingsListVC.h; sourceTree = "<group>"; };
 		940E0C1213A14FFC00FB8298 /* SavedRecordingsListVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SavedRecordingsListVC.m; sourceTree = "<group>"; };
 		940E0C1313A14FFD00FB8298 /* SavedRecordingsListVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SavedRecordingsListVC.xib; sourceTree = "<group>"; };
+		9415AEED13A15AF500B46CB2 /* Annotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Annotation.h; path = ../Annotation.h; sourceTree = "<group>"; };
+		9415AEEE13A15AF500B46CB2 /* Annotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Annotation.m; path = ../Annotation.m; sourceTree = "<group>"; };
+		9415AEF013A15AF500B46CB2 /* Recording.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Recording.h; path = ../Recording.h; sourceTree = "<group>"; };
+		9415AEF113A15AF500B46CB2 /* Recording.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Recording.m; path = ../Recording.m; sourceTree = "<group>"; };
 		944A610C139EA74D008C0F71 /* RecordVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RecordVC.h; sourceTree = "<group>"; };
 		944A610D139EA74D008C0F71 /* RecordVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RecordVC.m; sourceTree = "<group>"; };
 		944A610E139EA74D008C0F71 /* RecordVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RecordVC.xib; sourceTree = "<group>"; };
@@ -124,10 +124,10 @@
 		940E0BD313A11BA500FB8298 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				940E0BEC13A1410C00FB8298 /* Annotation.h */,
-				940E0BED13A1410C00FB8298 /* Annotation.m */,
-				940E0BE913A1410A00FB8298 /* Recording.h */,
-				940E0BEA13A1410B00FB8298 /* Recording.m */,
+				9415AEF013A15AF500B46CB2 /* Recording.h */,
+				9415AEF113A15AF500B46CB2 /* Recording.m */,
+				9415AEED13A15AF500B46CB2 /* Annotation.h */,
+				9415AEEE13A15AF500B46CB2 /* Annotation.m */,
 				948D8C2E139E9C4300C5877F /* VLS_Project.xcdatamodeld */,
 			);
 			name = Model;
@@ -358,9 +358,9 @@
 				948D8C30139E9C4300C5877F /* VLS_Project.xcdatamodeld in Sources */,
 				944A610F139EA74D008C0F71 /* RecordVC.m in Sources */,
 				92A09BE4139FF610001C3A69 /* SavedRecordingsVC.m in Sources */,
-				940E0BEB13A1410B00FB8298 /* Recording.m in Sources */,
-				940E0BEE13A1410C00FB8298 /* Annotation.m in Sources */,
 				940E0C1413A14FFD00FB8298 /* SavedRecordingsListVC.m in Sources */,
+				9415AEEF13A15AF500B46CB2 /* Annotation.m in Sources */,
+				9415AEF213A15AF500B46CB2 /* Recording.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

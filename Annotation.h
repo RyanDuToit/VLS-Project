@@ -14,9 +14,9 @@
 @interface Annotation : NSManagedObject {
 @private
 }
-@property (nonatomic, retain) NSString * note;
 @property (nonatomic, retain) NSNumber * timeStamp;
 @property (nonatomic, retain) NSString * Summary;
+@property (nonatomic, retain) NSString * note;
 @property (nonatomic, retain) Recording * recording;
 
 @end

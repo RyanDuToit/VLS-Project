@@ -11,9 +11,9 @@
 
 
 @implementation Annotation
-@dynamic note;
 @dynamic timeStamp;
 @dynamic Summary;
+@dynamic note;
 @dynamic recording;
 
 
