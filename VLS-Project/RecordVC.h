@@ -25,6 +25,7 @@ AVAudioSessionDelegate, AVAudioPlayerDelegate> {
 @property (nonatomic, retain) AVAudioRecorder *audioRecorder;
 @property (nonatomic, retain) AVAudioPlayer *audioPlayer;
 @property (nonatomic, retain) IBOutlet UIButton *saveButton;
+@property (nonatomic, retain) NSManagedObjectContext *managedObjectContext;
 
 - (IBAction)togglePlay:(id)sender;
 - (IBAction)toggleRecord:(id)sender;

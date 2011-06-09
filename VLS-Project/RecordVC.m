@@ -8,7 +8,7 @@
 
 #import "RecordVC.h"
 #import <CoreAudio/CoreAudioTypes.h>
-
+#import "Recording.h"
 @implementation RecordVC
 
 @synthesize progressBar;
@@ -17,6 +17,7 @@
 @synthesize audioPlayer;
 @synthesize saveButton;
 @synthesize audioRecorder;
+@synthesize managedObjectContext;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -93,7 +94,7 @@
                                     [NSNumber numberWithFloat:44100.0], AVSampleRateKey,
                                     [NSNumber numberWithInt:kAudioFormatAppleLossless], AVFormatIDKey,
                                     [NSNumber numberWithInt:1], AVNumberOfChannelsKey,
-                                    [NSNumber numberWithInt:AVAudioQualityMax], AVEncoderAudioQualityKey,
+                                    [NSNumber numberWithInt:AVAudioQualityMedium], AVEncoderAudioQualityKey,
                                     nil];
     self.audioRecorder = [[AVAudioRecorder alloc] initWithURL:[self getSoundURL] settings:recordSettings error:NULL];
     self.audioRecorder.delegate = self;
@@ -110,7 +111,7 @@
         [self tearDownAudioSession];
         [self.audioPlayer stop];
         progressBar.progress=0.0;
-
+        
     }
     //play start
     else {
@@ -149,12 +150,34 @@
         [self tearDownAudioSession];
         [self.audioRecorder stop];
         progressBar.progress=0.0;
-
+        
     }
     checkRecord++;
 }
 
 - (IBAction)saveAction:(id)sender {
+    // get requried stuff
+    NSURL *startURL;
+    startURL = [self getSoundURL];
+    NSDate *timestamp = [[[NSDate alloc] init] autorelease];
+    
+    NSString *dateString = [timestamp description];
+    [dateString stringByReplacingOccurrencesOfString:@":"withString:@"-"];
+    
+    NSArray *segments = [NSArray arrayWithObjects:NSHomeDirectory(), @"Documents",  [NSString stringWithFormat: @"%@recording.caf",dateString], nil];
+    
+    NSString *newSoundFilePath = [NSString pathWithComponents:segments];   
+    
+    NSURL *finalURL = [NSURL alloc];
+
+    [[finalURL initFileURLWithPath:newSoundFilePath] autorelease];
+
+    [[NSFileManager defaultManager] copyItemAtURL:startURL toURL:finalURL error:NULL];
+
+    Recording *newRecording = [NSEntityDescription insertNewObjectForEntityForName:@"Recording" inManagedObjectContext:self.managedObjectContext];
+    newRecording.fileURL = newSoundFilePath;
+    [self.managedObjectContext save:NULL];
+    
 }
 - (void)updateDisplay {
     if (checkPlay%2==0) {
