@@ -110,7 +110,7 @@
         [self tearDownAudioSession];
         [self.audioPlayer stop];
         progressBar.progress=0.0;
-
+        
     }
     //play start
     else {
@@ -149,12 +149,40 @@
         [self tearDownAudioSession];
         [self.audioRecorder stop];
         progressBar.progress=0.0;
-
+        
     }
     checkRecord++;
 }
 
 - (IBAction)saveAction:(id)sender {
+    // get requried stuff
+    NSURL *startURL;
+    startURL = [self getSoundURL];
+    NSDate *timestamp = [[[NSDate alloc] init] autorelease];
+    
+    NSString *dateString = [timestamp description];
+    [dateString stringByReplacingOccurrencesOfString:@":"withString:@"-"];
+    
+    NSArray *segments = [NSArray arrayWithObjects:NSHomeDirectory(), @"Documents",  [NSString stringWithFormat: @"%@recording.caf",dateString], nil];
+    
+    NSString *newSoundFilePath = [NSString pathWithComponents:segments];   
+    
+    NSURL *finalURL = [NSURL alloc];
+
+    [[finalURL initFileURLWithPath:newSoundFilePath] autorelease];
+
+    
+    
+    
+    
+    //NSFileManager *fileManager =[[[NSFileManager alloc] init] autorelease];
+    
+    if([[NSFileManager defaultManager] copyItemAtURL:startURL toURL:finalURL error:NULL])
+    {
+        NSLog(@"success");
+    }
+    
+    
 }
 - (void)updateDisplay {
     if (checkPlay%2==0) {
