@@ -93,7 +93,7 @@
                                     [NSNumber numberWithFloat:44100.0], AVSampleRateKey,
                                     [NSNumber numberWithInt:kAudioFormatAppleLossless], AVFormatIDKey,
                                     [NSNumber numberWithInt:1], AVNumberOfChannelsKey,
-                                    [NSNumber numberWithInt:AVAudioQualityMax], AVEncoderAudioQualityKey,
+                                    [NSNumber numberWithInt:AVAudioQualityMedium], AVEncoderAudioQualityKey,
                                     nil];
     self.audioRecorder = [[AVAudioRecorder alloc] initWithURL:[self getSoundURL] settings:recordSettings error:NULL];
     self.audioRecorder.delegate = self;
