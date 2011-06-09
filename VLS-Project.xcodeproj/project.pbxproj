@@ -17,6 +17,8 @@
 		92AE6CF6139EA3E200373814 /* play-stop.png in Resources */ = {isa = PBXBuildFile; fileRef = 92AE6CF1139EA3E200373814 /* play-stop.png */; };
 		92AE6CF7139EA3E200373814 /* record-start.png in Resources */ = {isa = PBXBuildFile; fileRef = 92AE6CF2139EA3E200373814 /* record-start.png */; };
 		92AE6CF8139EA3E200373814 /* record-stop.png in Resources */ = {isa = PBXBuildFile; fileRef = 92AE6CF3139EA3E200373814 /* record-stop.png */; };
+		940E0BCE13A11B7300FB8298 /* Recording.m in Sources */ = {isa = PBXBuildFile; fileRef = 940E0BCD13A11B7300FB8298 /* Recording.m */; };
+		940E0BD213A11B8500FB8298 /* Annotation.m in Sources */ = {isa = PBXBuildFile; fileRef = 940E0BD113A11B8500FB8298 /* Annotation.m */; };
 		944A610F139EA74D008C0F71 /* RecordVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 944A610D139EA74D008C0F71 /* RecordVC.m */; };
 		944A6110139EA74D008C0F71 /* RecordVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 944A610E139EA74D008C0F71 /* RecordVC.xib */; };
 		948D8C18139E9C4300C5877F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 948D8C17139E9C4300C5877F /* UIKit.framework */; };
@@ -59,6 +61,10 @@
 		92AE6CF1139EA3E200373814 /* play-stop.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "play-stop.png"; sourceTree = "<group>"; };
 		92AE6CF2139EA3E200373814 /* record-start.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "record-start.png"; sourceTree = "<group>"; };
 		92AE6CF3139EA3E200373814 /* record-stop.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "record-stop.png"; sourceTree = "<group>"; };
+		940E0BCC13A11B7300FB8298 /* Recording.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Recording.h; sourceTree = "<group>"; };
+		940E0BCD13A11B7300FB8298 /* Recording.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Recording.m; sourceTree = "<group>"; };
+		940E0BD013A11B8500FB8298 /* Annotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Annotation.h; sourceTree = "<group>"; };
+		940E0BD113A11B8500FB8298 /* Annotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Annotation.m; sourceTree = "<group>"; };
 		944A610C139EA74D008C0F71 /* RecordVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RecordVC.h; sourceTree = "<group>"; };
 		944A610D139EA74D008C0F71 /* RecordVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RecordVC.m; sourceTree = "<group>"; };
 		944A610E139EA74D008C0F71 /* RecordVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RecordVC.xib; sourceTree = "<group>"; };
@@ -110,6 +116,41 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		940E0BD313A11BA500FB8298 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				940E0BCC13A11B7300FB8298 /* Recording.h */,
+				940E0BCD13A11B7300FB8298 /* Recording.m */,
+				940E0BD013A11B8500FB8298 /* Annotation.h */,
+				948D8C2E139E9C4300C5877F /* VLS_Project.xcdatamodeld */,
+				940E0BD113A11B8500FB8298 /* Annotation.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		940E0BD413A11BB500FB8298 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				948D8C28139E9C4300C5877F /* VLS_ProjectAppDelegate.h */,
+				948D8C29139E9C4300C5877F /* VLS_ProjectAppDelegate.m */,
+				944A610C139EA74D008C0F71 /* RecordVC.h */,
+				944A610D139EA74D008C0F71 /* RecordVC.m */,
+				92A09BE1139FF610001C3A69 /* SavedRecordingsVC.h */,
+				92A09BE2139FF610001C3A69 /* SavedRecordingsVC.m */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		940E0BD513A11BB900FB8298 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				944A610E139EA74D008C0F71 /* RecordVC.xib */,
+				92A09BE3139FF610001C3A69 /* SavedRecordingsVC.xib */,
+				948D8C2B139E9C4300C5877F /* MainWindow.xib */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
 		948D8C08139E9C4300C5877F = {
 			isa = PBXGroup;
 			children = (
@@ -144,16 +185,9 @@
 		948D8C1F139E9C4300C5877F /* VLS-Project */ = {
 			isa = PBXGroup;
 			children = (
-				948D8C28139E9C4300C5877F /* VLS_ProjectAppDelegate.h */,
-				948D8C29139E9C4300C5877F /* VLS_ProjectAppDelegate.m */,
-				948D8C2B139E9C4300C5877F /* MainWindow.xib */,
-				944A610C139EA74D008C0F71 /* RecordVC.h */,
-				944A610D139EA74D008C0F71 /* RecordVC.m */,
-				944A610E139EA74D008C0F71 /* RecordVC.xib */,
-				92A09BE1139FF610001C3A69 /* SavedRecordingsVC.h */,
-				92A09BE2139FF610001C3A69 /* SavedRecordingsVC.m */,
-				92A09BE3139FF610001C3A69 /* SavedRecordingsVC.xib */,
-				948D8C2E139E9C4300C5877F /* VLS_Project.xcdatamodeld */,
+				940E0BD513A11BB900FB8298 /* View */,
+				940E0BD413A11BB500FB8298 /* Controller */,
+				940E0BD313A11BA500FB8298 /* Model */,
 				948D8C20139E9C4300C5877F /* Supporting Files */,
 			);
 			path = "VLS-Project";
@@ -315,6 +349,8 @@
 				948D8C30139E9C4300C5877F /* VLS_Project.xcdatamodeld in Sources */,
 				944A610F139EA74D008C0F71 /* RecordVC.m in Sources */,
 				92A09BE4139FF610001C3A69 /* SavedRecordingsVC.m in Sources */,
+				940E0BCE13A11B7300FB8298 /* Recording.m in Sources */,
+				940E0BD213A11B8500FB8298 /* Annotation.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
