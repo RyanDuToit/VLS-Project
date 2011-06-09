@@ -8,7 +8,7 @@
 
 #import "RecordVC.h"
 #import <CoreAudio/CoreAudioTypes.h>
-
+#import "Recording.h"
 @implementation RecordVC
 
 @synthesize progressBar;
@@ -17,6 +17,7 @@
 @synthesize audioPlayer;
 @synthesize saveButton;
 @synthesize audioRecorder;
+@synthesize managedObjectContext;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -171,10 +172,11 @@
 
     [[finalURL initFileURLWithPath:newSoundFilePath] autorelease];
 
-    
-    
     [[NSFileManager defaultManager] copyItemAtURL:startURL toURL:finalURL error:NULL];
 
+    Recording *newRecording = [NSEntityDescription insertNewObjectForEntityForName:@"Recording" inManagedObjectContext:self.managedObjectContext];
+    newRecording.fileURL = newSoundFilePath;
+    [self.managedObjectContext save:NULL];
     
 }
 - (void)updateDisplay {

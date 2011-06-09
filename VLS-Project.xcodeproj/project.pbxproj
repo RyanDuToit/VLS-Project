@@ -19,6 +19,8 @@
 		92AE6CF8139EA3E200373814 /* record-stop.png in Resources */ = {isa = PBXBuildFile; fileRef = 92AE6CF3139EA3E200373814 /* record-stop.png */; };
 		940E0BEB13A1410B00FB8298 /* Recording.m in Sources */ = {isa = PBXBuildFile; fileRef = 940E0BEA13A1410B00FB8298 /* Recording.m */; };
 		940E0BEE13A1410C00FB8298 /* Annotation.m in Sources */ = {isa = PBXBuildFile; fileRef = 940E0BED13A1410C00FB8298 /* Annotation.m */; };
+		940E0C1413A14FFD00FB8298 /* SavedRecordingsListVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 940E0C1213A14FFC00FB8298 /* SavedRecordingsListVC.m */; };
+		940E0C1513A14FFD00FB8298 /* SavedRecordingsListVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 940E0C1313A14FFD00FB8298 /* SavedRecordingsListVC.xib */; };
 		944A610F139EA74D008C0F71 /* RecordVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 944A610D139EA74D008C0F71 /* RecordVC.m */; };
 		944A6110139EA74D008C0F71 /* RecordVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 944A610E139EA74D008C0F71 /* RecordVC.xib */; };
 		948D8C18139E9C4300C5877F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 948D8C17139E9C4300C5877F /* UIKit.framework */; };
@@ -65,6 +67,9 @@
 		940E0BEA13A1410B00FB8298 /* Recording.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Recording.m; path = ../Recording.m; sourceTree = "<group>"; };
 		940E0BEC13A1410C00FB8298 /* Annotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Annotation.h; path = ../Annotation.h; sourceTree = "<group>"; };
 		940E0BED13A1410C00FB8298 /* Annotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Annotation.m; path = ../Annotation.m; sourceTree = "<group>"; };
+		940E0C1113A14FFC00FB8298 /* SavedRecordingsListVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SavedRecordingsListVC.h; sourceTree = "<group>"; };
+		940E0C1213A14FFC00FB8298 /* SavedRecordingsListVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SavedRecordingsListVC.m; sourceTree = "<group>"; };
+		940E0C1313A14FFD00FB8298 /* SavedRecordingsListVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SavedRecordingsListVC.xib; sourceTree = "<group>"; };
 		944A610C139EA74D008C0F71 /* RecordVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RecordVC.h; sourceTree = "<group>"; };
 		944A610D139EA74D008C0F71 /* RecordVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RecordVC.m; sourceTree = "<group>"; };
 		944A610E139EA74D008C0F71 /* RecordVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RecordVC.xib; sourceTree = "<group>"; };
@@ -133,6 +138,9 @@
 			children = (
 				948D8C28139E9C4300C5877F /* VLS_ProjectAppDelegate.h */,
 				948D8C29139E9C4300C5877F /* VLS_ProjectAppDelegate.m */,
+				940E0C1113A14FFC00FB8298 /* SavedRecordingsListVC.h */,
+				940E0C1213A14FFC00FB8298 /* SavedRecordingsListVC.m */,
+				940E0C1313A14FFD00FB8298 /* SavedRecordingsListVC.xib */,
 				944A610C139EA74D008C0F71 /* RecordVC.h */,
 				944A610D139EA74D008C0F71 /* RecordVC.m */,
 				92A09BE1139FF610001C3A69 /* SavedRecordingsVC.h */,
@@ -309,6 +317,7 @@
 				92A09BDE139FF39F001C3A69 /* 66-microphone.png in Resources */,
 				92A09BE0139FF3A7001C3A69 /* 159-voicemail.png in Resources */,
 				92A09BE5139FF611001C3A69 /* SavedRecordingsVC.xib in Resources */,
+				940E0C1513A14FFD00FB8298 /* SavedRecordingsListVC.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -351,6 +360,7 @@
 				92A09BE4139FF610001C3A69 /* SavedRecordingsVC.m in Sources */,
 				940E0BEB13A1410B00FB8298 /* Recording.m in Sources */,
 				940E0BEE13A1410C00FB8298 /* Annotation.m in Sources */,
+				940E0C1413A14FFD00FB8298 /* SavedRecordingsListVC.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
