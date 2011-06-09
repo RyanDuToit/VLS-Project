@@ -173,15 +173,8 @@
 
     
     
-    
-    
-    //NSFileManager *fileManager =[[[NSFileManager alloc] init] autorelease];
-    
-    if([[NSFileManager defaultManager] copyItemAtURL:startURL toURL:finalURL error:NULL])
-    {
-        NSLog(@"success");
-    }
-    
+    [[NSFileManager defaultManager] copyItemAtURL:startURL toURL:finalURL error:NULL];
+
     
 }
 - (void)updateDisplay {
