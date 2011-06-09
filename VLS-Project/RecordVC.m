@@ -174,9 +174,9 @@
 
     [[NSFileManager defaultManager] copyItemAtURL:startURL toURL:finalURL error:NULL];
 
-    Recording *newRecording = [NSEntityDescription insertNewObjectForEntityForName:@"Recording" inManagedObjectContext:self.managedObjectContext];
-    newRecording.fileURL = newSoundFilePath;
-    [self.managedObjectContext save:NULL];
+    //Recording *newRecording = [NSEntityDescription insertNewObjectForEntityForName:@"Recording" inManagedObjectContext:self.managedObjectContext];
+    //newRecording.fileURL = newSoundFilePath;
+    //[self.managedObjectContext save:NULL];
     
 }
 - (void)updateDisplay {
